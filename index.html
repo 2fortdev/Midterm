@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<!-- Author: Sam Aaron
+     Due Date: 10/15/21
+     Class: CIS-376-->
+
+<html lang="en">
+<head>
+<title>John Doe</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/style.css" rel="stylesheet">
+<style>
+* 
+/* sets the cards centered */
+  {
+  box-sizing: border-box;
+}
+/* fixed footer to display the page's repo */
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(130, 112, 233);
+   color: white;
+   text-align: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(130, 112, 233);
+  padding: 15px;
+  
+  text-align: center;
+  font-size: 35px;
+  
+}
+
+/* used article tag to have better control over the cards specifically*/
+article {
+  float: right;
+  padding-right: 200px;
+  padding: 110px;
+  width: 80%;
+  background-color: rgb(240, 240, 240);
+ 
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+</style>
+</head>
+<!-- Simple header to info visitor of what the bag is about  -->
+<header>
+  <div class="jumbotron">
+      <h2>John Doe</h2>
+  </div>
+</header>
+
+<body>
+
+
+
+  
+      <!-- Container that holds the img -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-md-4 col-centered">
+            <div class="maintxt">
+              <img id="John-pic" class="rounded img-fluid" src="img/John.jpeg" style="width:400px;height:500px;">
+              <span class="overlay-text">Picture of John</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Article to hold the Dev Skill card, and the DOM cards  -->
+  <article>
+    <div  class="card w-75" style="width:50%" >
+      <div class="card-body">
+        <h5 class="card-title">Dev Skills</h5>
+       <!-- list used to order skills -->
+        <p class="card-text"><ul>
+          <li>Html</li>
+          <li>JavaScript</li>
+          <li>Css</li>
+          <li>C++</li>
+          <li>Python</li>
+        </ul></p>
+      </div>
+    </div>
+    <!-- Breaks used to give space between cards -->
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- First card is just a title to be consistant by keeping the actual data with the JQUERY data object -->
+    <div id="firstCard" class="card-deck" style=" width:50%;">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Examples of Previous Work</h5>
+          </div>
+      </div>
+      <!-- The Data Object created elements will go here -->
+  </article>
+
+  <br>
+  <br>
+  <!-- Fixed footer displaying the page's code -->
+  <div class="footer" style = "padding-top: 10px;">
+    
+    <a href="https://github.com/2fortdev/Midterm" target="_blank">Page Code
+    
+  </div>
+  
+</body>
+
+<!-- All custom + jquery base scripts -->
+<!-- JQUERY SCRIPTS  -->
+<script src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+<script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js' integrity='sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=' crossorigin='anonymous'></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="scripts/script.js"></script>
